@@ -47,4 +47,4 @@ function calculate(op, a, b) {
   }
 }
 
-console.log(calculate("/", 2, 4));
+console.log(calculate(operation, number_1, number_2));
