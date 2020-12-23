@@ -31,19 +31,18 @@ const mul = (a, b) => a * b;
 const div = (a, b) => a / b;
 const mod = (a, b) => a % b;
 function calculate(op, a, b) {
-  switch (op) {
-    case "+":
-      return add(a, b);
-    case "-":
-      return sub(a, b);
-    case "*":
-      return mul(a, b);
-    case "/":
-      return div(a, b);
-    case "%":
-      return mod(a, b);
-    default:
-      return "Not a valid operation";
+  if (op == "+") {
+    return add(a, b);
+  } else if (op == "-") {
+    return sub(a, b);
+  } else if (op == "*") {
+    return mul(a, b);
+  } else if (op == "/") {
+    return div(a, b);
+  } else if (op == "%") {
+    return mod(a, b);
+  } else {
+    console.log("Not a valid operation");
   }
 }
 
